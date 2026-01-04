@@ -67,5 +67,4 @@ The dashboard highlights:
 ## 👤 Author
 
 **Vansh Sharma**
-Data Analytics | SQL | Power BI | Python
 
