@@ -35,9 +35,6 @@ FROM customers
 GROUP BY subscription_status;
 
 -- Q6. Which 5 products have the highest percentage of purchases with discounts applied? 
--- Why did we use CASE?
--- Because SQL: Cannot directly “count Yes only”
--- So we convert Yes → 1, No → 0, Then sum them
 
 SELECT item_purchased, 
 round(SUM(CASE WHEN discount_applied = 'Yes' THEN 1 ELSE 0 END )/COUNT(*) * 100,2) AS discount_rate
